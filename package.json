@@ -1,0 +1,34 @@
+{
+  "name": "electron-react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./",
+    "package": "electron-packager ./ layout --platform=win32 --arch=x64 --electron-version=1.7.9 --out=$HOME/package --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "electron": "^1.7.10",
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "electron-packager": "^10.1.0"
+  },
+  "babel": {
+    "sourceMaps": "inline",
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  }
+}
